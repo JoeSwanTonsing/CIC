@@ -68,26 +68,4 @@ const styles = {
     color: '#fff',
     textAlign: 'justify',
   },
-  introCard: {
-    borderRadius: 3,
-    borderWidth: 1,
-    borderColor: '#d1d1d1',
-    backgroundColor: '#fff',
-    padding: 15,
-    marginBottom: 15,
-  },
-  introCardTitle: {
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  introCardTitleText: {
-    fontSize: 22,
-    fontWeight: 'bold',
-  },
-  introCardBody: {
-    marginTop: 15,
-  },
-  introCardBodyText: {
-    textAlign: 'justify',
-  },
 };
