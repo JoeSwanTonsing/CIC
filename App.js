@@ -23,6 +23,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const App: () => React$Node = () => {
   return (
@@ -48,6 +49,7 @@ const App: () => React$Node = () => {
             </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Icon name="add-circle-outline" size={25} />
               <Text style={styles.sectionDescription}>
                 <ReloadInstructions />
               </Text>
