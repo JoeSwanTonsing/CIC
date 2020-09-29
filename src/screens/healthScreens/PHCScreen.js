@@ -4,7 +4,7 @@ import axios from 'axios';
 import Spinner from '../../components/Spinner';
 
 //components
-import HospitalCard from '../../components/HospitalCard';
+import HealthCard from '../../components/HealthCard';
 
 export default function PHCScreen({navigation}) {
   const [phcs, setPhcs] = useState([]);
@@ -43,7 +43,7 @@ export default function PHCScreen({navigation}) {
         ) : null}
         <View style={styles.listContainer}>
           {phcs.map((phc) => (
-            <HospitalCard key={phc.id} cardData={phc} />
+            <HealthCard key={phc.id} cardData={phc} />
           ))}
         </View>
       </ScrollView>

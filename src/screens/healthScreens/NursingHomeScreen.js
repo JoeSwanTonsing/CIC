@@ -4,7 +4,7 @@ import axios from 'axios';
 import Spinner from '../../components/Spinner';
 
 //components
-import HospitalCard from '../../components/HospitalCard';
+import HealthCard from '../../components/HealthCard';
 
 export default function NursingHomeScreen({navigation}) {
   const [nursingHomes, setNursingHomes] = useState([]);
@@ -42,7 +42,7 @@ export default function NursingHomeScreen({navigation}) {
         ) : null}
         <View style={styles.listContainer}>
           {nursingHomes.map((nursingHome) => (
-            <HospitalCard key={nursingHome.id} cardData={nursingHome} />
+            <HealthCard key={nursingHome.id} cardData={nursingHome} />
           ))}
         </View>
       </ScrollView>
