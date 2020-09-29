@@ -13,7 +13,9 @@ export default function NursingHomeScreen({navigation}) {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('https://joeswantonsing.github.io/CIC_Data/api/nursinghomes.json')
+      .get(
+        'https://joeswantonsing.github.io/CIC_Data/api/health/nursinghomes.json',
+      )
       .then((res) => {
         setNursingHomes(res.data);
         setIsLoading(false);

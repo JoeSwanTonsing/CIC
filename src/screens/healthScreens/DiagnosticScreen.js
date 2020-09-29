@@ -14,7 +14,7 @@ export default function DiagnosticScreen({navigation}) {
     setIsLoading(true);
     axios
       .get(
-        'https://joeswantonsing.github.io/CIC_Data/api/diagnosticcenter.json',
+        'https://joeswantonsing.github.io/CIC_Data/api/health/diagnosticcenter.json',
       )
       .then((res) => {
         setDcenter(res.data);

@@ -13,7 +13,7 @@ export default function ClinicScreen({navigation}) {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('https://joeswantonsing.github.io/CIC_Data/api/clinics.json')
+      .get('https://joeswantonsing.github.io/CIC_Data/api/health/clinics.json')
       .then((res) => {
         setClinics(res.data);
         setIsLoading(false);

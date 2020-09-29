@@ -13,7 +13,7 @@ export default function PHCScreen({navigation}) {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('https://joeswantonsing.github.io/CIC_Data/api/phc.json')
+      .get('https://joeswantonsing.github.io/CIC_Data/api/health/phc.json')
       .then((res) => {
         setPhcs(res.data);
         setIsLoading(false);

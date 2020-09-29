@@ -13,7 +13,9 @@ export default function HospitalScreen({navigation}) {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('https://joeswantonsing.github.io/CIC_Data/api/hospitals.json')
+      .get(
+        'https://joeswantonsing.github.io/CIC_Data/api/health/hospitals.json',
+      )
       .then((res) => {
         setHospitals(res.data);
         setIsLoading(false);
