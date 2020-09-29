@@ -20,6 +20,20 @@ export function DrawerContent(props) {
               }}
             />
           </Drawer.Section>
+          <Drawer.Section title="Public Services" style={styles.drawerSection}>
+            <DrawerItem
+              label="Health Care Facilities"
+              icon={() => (
+                <Image
+                  style={styles.drawerItemIcon}
+                  source={require('../assets/icons/heartbeat.png')}
+                />
+              )}
+              onPress={() => {
+                props.navigation.navigate('HealthCareFacilities');
+              }}
+            />
+          </Drawer.Section>
         </View>
       </DrawerContentScrollView>
       <Drawer.Section style={styles.bottomDrawerSection}>
