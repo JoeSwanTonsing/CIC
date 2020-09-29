@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 //Screens for stack
 import HealthScreen from '../screens/HealthScreen';
+import HospitalScreen from '../screens/healthScreens/HospitalScreen';
 
 const HealthStack = createStackNavigator();
 
@@ -35,6 +36,14 @@ const HealthStackScreen = ({navigation}) => (
             }}
           />
         ),
+      }}
+    />
+    <HealthStack.Screen
+      name="Hospitals"
+      component={HospitalScreen}
+      navigation={navigation}
+      options={{
+        title: 'Hospitals',
       }}
     />
   </HealthStack.Navigator>
