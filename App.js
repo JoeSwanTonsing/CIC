@@ -8,6 +8,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {DrawerContent} from './src/navigation/DrawerContent';
 import HomeStack from './src/navigation/HomeStack';
 import HealthStack from './src/navigation/HealthStack';
+import BanksAtmsStack from './src/navigation/BanksAtmsStack';
 
 const Drawer = createDrawerNavigator();
 
@@ -20,6 +21,7 @@ export default function App() {
           drawerContent={(props) => <DrawerContent {...props} />}>
           <Drawer.Screen name="Home" component={HomeStack} />
           <Drawer.Screen name="HealthCareFacilities" component={HealthStack} />
+          <Drawer.Screen name="BankAtmFacilities" component={BanksAtmsStack} />
         </Drawer.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
