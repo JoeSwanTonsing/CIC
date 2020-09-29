@@ -2,9 +2,9 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default function ListItemIconText({title}) {
+export default function ListItemIconText({title, onPress}) {
   return (
-    <TouchableOpacity style={styles.listItem}>
+    <TouchableOpacity style={styles.listItem} onPress={onPress}>
       <Text style={styles.listItemTitle}>{title}</Text>
       <Icon
         name="chevron-forward-outline"
