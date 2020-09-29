@@ -23,8 +23,20 @@ export default function HealthScreen({navigation}) {
           onPress={() => navigation.navigate('Hospitals')}
         />
         <ListItemIconText
-          title="Nursing"
-          onPress={() => navigation.navigate('Hospitals')}
+          title="Nursing Homes"
+          onPress={() => navigation.navigate('NursingHomes')}
+        />
+        <ListItemIconText
+          title="Clinics"
+          onPress={() => navigation.navigate('Clinics')}
+        />
+        <ListItemIconText
+          title="Primary Health Centres"
+          onPress={() => navigation.navigate('Phcs')}
+        />
+        <ListItemIconText
+          title="Diagnostic Centres"
+          onPress={() => navigation.navigate('DiagnosticCentre')}
         />
       </ScrollView>
     </SafeAreaView>
