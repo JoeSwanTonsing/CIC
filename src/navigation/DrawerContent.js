@@ -12,7 +12,10 @@ export function DrawerContent(props) {
           <Drawer.Section style={styles.drawerSection}>
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="home-outline" color={color} size={size} />
+                <Image
+                  style={styles.drawerItemIcon}
+                  source={require('../assets/icons/home_nav.png')}
+                />
               )}
               label="Home"
               onPress={() => {
@@ -20,7 +23,7 @@ export function DrawerContent(props) {
               }}
             />
           </Drawer.Section>
-          <Drawer.Section title="Public Services" style={styles.drawerSection}>
+          <Drawer.Section style={styles.drawerSection}>
             <DrawerItem
               label="Health Care Facilities"
               icon={() => (
@@ -31,6 +34,18 @@ export function DrawerContent(props) {
               )}
               onPress={() => {
                 props.navigation.navigate('HealthCareFacilities');
+              }}
+            />
+            <DrawerItem
+              label="Banks & ATMs"
+              icon={() => (
+                <Image
+                  style={styles.drawerItemIcon}
+                  source={require('../assets/icons/bank-online.png')}
+                />
+              )}
+              onPress={() => {
+                props.navigation.navigate('BankAtmFacilities');
               }}
             />
           </Drawer.Section>
