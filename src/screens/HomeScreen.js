@@ -25,20 +25,15 @@ export default function HomeScreen() {
           </View>
           <View style={styles.introCardBody}>
             <Text style={styles.introCardBodyText}>
-              This app is developed for the people of Churachandpur, to keep up
-              with information within the district. The app gives you
-              information about the various health care facilities available in
-              the district. More sectors will be added.
+              This App is developed for the people of Churachandpur District,
+              Manipur to keep up-to-date with information and locations of
+              office buildings in the district.
             </Text>
           </View>
         </View>
         <Card
           title="Disclaimer"
           content="Contents, Information and other details contained within this app are taken from local and online sources where the information is freely made available to the general public. If for any reason, any private information is displayed, please contact developer."
-        />
-        <Card
-          title="Getting Started"
-          content="To get started, click on one of the links in the navigation bar."
         />
       </ScrollView>
     </SafeAreaView>
