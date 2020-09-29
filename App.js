@@ -5,7 +5,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 //Stack Navs for other screens
-import {DrawerContent} from './src/navigation/DrawerContents';
+import {DrawerContent} from './src/navigation/DrawerContent';
 import HomeStack from './src/navigation/HomeStack';
 
 const Drawer = createDrawerNavigator();
