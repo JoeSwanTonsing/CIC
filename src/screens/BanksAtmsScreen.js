@@ -20,6 +20,7 @@ export default function BanksAtmsScreen({navigation}) {
       </View>
       <ScrollView style={styles.scrollViewStyle}>
         <ListItemIconText
+          icon="sbi"
           title="SBI Branches and ATMs"
           onPress={() => navigation.navigate('SBIBanksatm')}
         />
