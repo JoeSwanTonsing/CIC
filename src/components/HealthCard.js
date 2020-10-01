@@ -27,13 +27,7 @@ export default function HealthCard({cardData}) {
 
   function returnDepartments() {
     if (departments.length === 1) {
-      return (
-        <View style={styles.departmentsContainer}>
-          <Text style={styles.departmentsTitle}>
-            Departments Information Unavailable
-          </Text>
-        </View>
-      );
+      return null;
     }
     return (
       <View style={styles.departmentsContainer}>
@@ -58,12 +52,7 @@ export default function HealthCard({cardData}) {
         </View>
       );
     }
-    return (
-      <View style={styles.openingContainer}>
-        <Icon name="calendar-outline" size={18} style={styles.openingIcon} />
-        <Text style={styles.openingText}>Open days unavailable.</Text>
-      </View>
-    );
+    return null;
   }
 
   function returnHours() {
@@ -75,12 +64,7 @@ export default function HealthCard({cardData}) {
         </View>
       );
     }
-    return (
-      <View style={styles.openingContainer}>
-        <Icon name="time-outline" size={18} style={styles.openingIcon} />
-        <Text style={styles.openingText}>Timings Unavailable</Text>
-      </View>
-    );
+    return null;
   }
 
   function returnCloses() {
