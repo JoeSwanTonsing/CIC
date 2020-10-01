@@ -8,8 +8,8 @@ export default function BankCard({cardData}) {
   function returnType() {
     if (type.length > 1) {
       return (
-        <View style={styles.openingContainer}>
-          <Text style={styles.openingText}>{type}</Text>
+        <View style={styles.typeContainer}>
+          <Text style={styles.typeText}>Type: {type}</Text>
         </View>
       );
     }
@@ -121,19 +121,11 @@ const styles = {
     flexWrap: 'wrap',
     flex: 1,
   },
-  departmentsContainer: {
+  typeContainer: {
     padding: 15,
   },
-  departmentsTitle: {
+  typeText: {
     fontWeight: 'bold',
-  },
-  departmentItem: {},
-  depItemText: {
-    //backgroundColor: '#FCDEBE',
-    padding: 5,
-    margin: 3,
-    flexWrap: 'wrap',
-    flex: 1,
   },
   openingContainer: {
     paddingHorizontal: 15,
