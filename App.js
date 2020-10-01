@@ -7,6 +7,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 //Stack Navs for other screens
 import {DrawerContent} from './src/navigation/DrawerContent';
 import HomeStack from './src/navigation/HomeStack';
+import AboutStack from './src/navigation/AboutStack';
 import HealthStack from './src/navigation/HealthStack';
 import BanksAtmsStack from './src/navigation/BanksAtmsStack';
 
@@ -22,6 +23,7 @@ export default function App() {
           <Drawer.Screen name="Home" component={HomeStack} />
           <Drawer.Screen name="HealthCareFacilities" component={HealthStack} />
           <Drawer.Screen name="BankAtmFacilities" component={BanksAtmsStack} />
+          <Drawer.Screen name="About" component={AboutStack} />
         </Drawer.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

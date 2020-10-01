@@ -49,6 +49,20 @@ export function DrawerContent(props) {
               }}
             />
           </Drawer.Section>
+          <Drawer.Section style={styles.drawerSection}>
+            <DrawerItem
+              label="About"
+              icon={() => (
+                <Image
+                  style={styles.drawerItemIcon}
+                  source={require('../assets/icons/information.png')}
+                />
+              )}
+              onPress={() => {
+                props.navigation.navigate('About');
+              }}
+            />
+          </Drawer.Section>
         </View>
       </DrawerContentScrollView>
       <Drawer.Section style={styles.bottomDrawerSection}>
