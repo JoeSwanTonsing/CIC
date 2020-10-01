@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function BankCard({cardData}) {
-  const {name, type, address, open, close, gmaps, phone} = cardData;
+  const {name, type, address, open, close, gmaps} = cardData;
 
   function returnType() {
     if (type.length > 1) {
@@ -126,7 +126,7 @@ const styles = {
   },
   typeText: {
     fontWeight: 'bold',
-    fontStyle: 'italics',
+    fontStyle: 'italic',
   },
   openingContainer: {
     paddingHorizontal: 15,
