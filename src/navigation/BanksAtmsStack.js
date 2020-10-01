@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 //Screens for stack
 import BankAtmScreen from '../screens/BanksAtmsScreen';
+import SBIScreen from '../screens/banksAtmsScreens/SBIScreen';
 
 const BankAtmStack = createStackNavigator();
 
@@ -34,6 +35,13 @@ const BankAtmStackScreen = ({navigation}) => (
             }}
           />
         ),
+      }}
+    />
+    <BankAtmStack.Screen
+      name="SBIBanksatm"
+      component={SBIScreen}
+      options={{
+        title: ' SBI Banks & ATMs ',
       }}
     />
   </BankAtmStack.Navigator>
