@@ -3,7 +3,27 @@ import {View, Text, TouchableOpacity, Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function HealthCard({cardData}) {
-  const {name, address, timing, days, gmaps, departments, closes} = cardData;
+  const {
+    name,
+    address,
+    type,
+    timing,
+    days,
+    gmaps,
+    departments,
+    closes,
+  } = cardData;
+
+  function returnType() {
+    if (type.length > 1) {
+      return (
+        <View style={styles.openingContainer}>
+          <Text style={styles.openingText}>Type: {type}</Text>
+        </View>
+      );
+    }
+    return null;
+  }
 
   function returnDepartments() {
     if (departments.length === 1) {
@@ -90,6 +110,7 @@ export default function HealthCard({cardData}) {
           <Icon style={styles.addressIcon} name="map-outline" size={23} />
           <Text style={styles.addressText}>{address}</Text>
         </View>
+        {returnType()}
         {returnDepartments()}
         {returnHours()}
         {returnDays()}
