@@ -44,6 +44,14 @@ export default function ListItemIconText({title, onPress, icon}) {
         />
       );
     }
+    if (icon === 'pharmacy') {
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/medicine.png')}
+        />
+      );
+    }
     if (icon === 'sbi') {
       return (
         <Image
