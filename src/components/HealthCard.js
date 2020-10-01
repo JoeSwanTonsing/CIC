@@ -17,8 +17,8 @@ export default function HealthCard({cardData}) {
   function returnType() {
     if (type.length > 1) {
       return (
-        <View style={styles.openingContainer}>
-          <Text style={styles.openingText}>Type: {type}</Text>
+        <View style={styles.typeContainer}>
+          <Text style={styles.typeText}>Type: {type}</Text>
         </View>
       );
     }
@@ -177,6 +177,13 @@ const styles = {
     lineHeight: 25,
     flexWrap: 'wrap',
     flex: 1,
+  },
+  typeContainer: {
+    padding: 15,
+  },
+  typeText: {
+    fontStyle: 'italic',
+    fontWeight: 'bold',
   },
   departmentsContainer: {
     padding: 15,

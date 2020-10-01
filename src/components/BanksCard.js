@@ -126,6 +126,7 @@ const styles = {
   },
   typeText: {
     fontWeight: 'bold',
+    fontStyle: 'italics',
   },
   openingContainer: {
     paddingHorizontal: 15,
