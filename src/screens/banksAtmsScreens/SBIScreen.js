@@ -28,7 +28,7 @@ export default function ClinicScreen({navigation}) {
       <View style={styles.introSection}>
         <Image
           style={styles.introImage}
-          source={require('../../assets/icons/clinic.png')}
+          source={require('../../assets/icons/sbiLogo.png')}
         />
         <View>
           <Text style={styles.introText}>All SBI Branches and ATMs</Text>
@@ -68,7 +68,6 @@ const styles = {
     height: 50,
     resizeMode: 'contain',
     marginRight: 5,
-    tintColor: '#53599A',
   },
   introText: {
     fontSize: 20,
