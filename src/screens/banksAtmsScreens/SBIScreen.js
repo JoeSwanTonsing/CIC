@@ -4,18 +4,18 @@ import axios from 'axios';
 import Spinner from '../../components/Spinner';
 
 //components
-import HealthCard from '../../components/HealthCard';
+import BankCard from '../../components/BanksCard';
 
 export default function ClinicScreen({navigation}) {
-  const [clinics, setClinics] = useState([]);
+  const [banks, setBanks] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get('https://joeswantonsing.github.io/CIC_Data/api/health/clinics.json')
+      .get('https://joeswantonsing.github.io/CIC_Data/api/bankatm/sbi.json')
       .then((res) => {
-        setClinics(res.data);
+        setBanks(res.data);
         setIsLoading(false);
       })
       .catch((err) => {
@@ -42,8 +42,8 @@ export default function ClinicScreen({navigation}) {
           </View>
         ) : null}
         <View style={styles.listContainer}>
-          {clinics.map((clinic) => (
-            <HealthCard key={clinic.id} cardData={clinic} />
+          {banks.map((bank) => (
+            <BankCard key={bank.id} cardData={bank} />
           ))}
         </View>
       </ScrollView>
