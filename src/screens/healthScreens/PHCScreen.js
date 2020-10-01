@@ -28,7 +28,7 @@ export default function PHCScreen({navigation}) {
       <View style={styles.introSection}>
         <Image
           style={styles.introImage}
-          source={require('../../assets/icons/hospital-4.png')}
+          source={require('../../assets/icons/clinic-2.png')}
         />
         <View>
           <Text style={styles.introText}>Listing All PHCs</Text>
