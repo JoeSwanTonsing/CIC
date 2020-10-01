@@ -9,6 +9,7 @@ import NursingHomeScreen from '../screens/healthScreens/NursingHomeScreen';
 import ClinicScreen from '../screens/healthScreens/ClinicScreen';
 import PHCScreen from '../screens/healthScreens/PHCScreen';
 import DiagnosticScreen from '../screens/healthScreens/DiagnosticScreen';
+import PharmacyScreen from '../screens/healthScreens/PharmacyScreen';
 
 const HealthStack = createStackNavigator();
 
@@ -80,6 +81,14 @@ const HealthStackScreen = ({navigation}) => (
       navigation={navigation}
       options={{
         title: 'Diagnostic Centres',
+      }}
+    />
+    <HealthStack.Screen
+      name="Pharmacies"
+      component={PharmacyScreen}
+      navigation={navigation}
+      options={{
+        title: 'Pharmacies',
       }}
     />
   </HealthStack.Navigator>
