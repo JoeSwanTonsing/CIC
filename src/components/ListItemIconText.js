@@ -5,22 +5,52 @@ import Icon from 'react-native-vector-icons/Ionicons';
 export default function ListItemIconText({title, onPress, icon}) {
   function returnLogo() {
     if (icon === 'hospital') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/hospital-2.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/hospital-2.png')}
+        />
+      );
     }
     if (icon === 'nursing') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/home.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/home.png')}
+        />
+      );
     }
     if (icon === 'clinic') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/clinic.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/clinic.png')}
+        />
+      );
     }
     if (icon === 'phc') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/clinic-2.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/clinic-2.png')}
+        />
+      );
     }
     if (icon === 'diagnostic') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/diagnostic.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/diagnostic.png')}
+        />
+      );
     }
     if (icon === 'sbi') {
-      return <Image style={styles.logoLeft} source={require('../assets/icons/sbiLogo.png')} />
+      return (
+        <Image
+          style={styles.logoLeft}
+          source={require('../assets/icons/sbiLogo.png')}
+        />
+      );
     }
     return null;
   }
