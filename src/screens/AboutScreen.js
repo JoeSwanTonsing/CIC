@@ -6,14 +6,13 @@ import {
   Text,
   Image,
   Linking,
+  TouchableOpacity,
 } from 'react-native';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-//components
-import Card from '../components/Card';
-
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
   const [info, setInfo] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -117,6 +116,13 @@ export default function HomeScreen() {
               <Text style={styles.devMail}>{info.devMail}</Text>
             </Text>
           </View>
+          <TouchableOpacity
+            style={styles.gitHubLinkContainer}
+            onPress={() => Linking.openURL(info.gitRepLink)}>
+            <Icon name="git-branch-outline" style={styles.gitHubIcon} />
+            <Text style={styles.gitHubText}>Fork on GitHub</Text>
+            <Icon name="logo-github" style={styles.gitHubIcon} />
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -213,5 +219,24 @@ const styles = {
   devMail: {
     color: 'blue',
     textDecorationLine: 'underline',
+  },
+  gitHubLinkContainer: {
+    flexDirection: 'row',
+    paddingVertical: 5,
+    marginHorizontal: 15,
+    marginBottom: 15,
+    backgroundColor: '#000',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  gitHubIcon: {
+    color: '#fff',
+    fontSize: 30,
+  },
+  gitHubText: {
+    marginHorizontal: 15,
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 };
