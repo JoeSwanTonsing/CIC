@@ -67,7 +67,7 @@ export function DrawerContent(props) {
       </DrawerContentScrollView>
       <Drawer.Section style={styles.bottomDrawerSection}>
         <Icon name="construct-outline" size={20} style={styles.versionIcon} />
-        <Text style={styles.versionText}>Ver. 2.0.1</Text>
+        <Text style={styles.versionText}>Ver. 1.0.2</Text>
       </Drawer.Section>
     </SafeAreaView>
   );
